@@ -58,8 +58,10 @@
                 <span class="author-block">Xiaoyu Ren</span>
               </div>
 
-              <div class="is-size-5 publication-authors">
+              <div class="is-size-5 publication-authors" style="display:flex;gap:.5rem;justify-content:center;align-items:center;flex-wrap:wrap;">
                 <span class="author-block">Beijing Phybot Technology Co., Ltd</span>
+                <!-- 公司 Logo：如你的文件是 SVG/JPG，请把扩展名对应改掉 -->
+                <img src="image/phybot_logo.png" alt="Phybot Logo" style="height:28px;vertical-align:middle;">
               </div>
 
               <div class="publication-links" style="margin-top:0.75rem;">
@@ -85,14 +87,17 @@
       </div>
     </section>
 
-    <!-- Teaser Image -->
+    <!-- Teaser (现在放视频) -->
     <section class="hero is-small">
       <div class="hero-body">
         <div class="container is-max-desktop">
-          <!-- <h2 class="title is-3 has-text-centered">Teaser</h2> -->
+          <h2 class="title is-3 has-text-centered">Video</h2>
           <div class="columns is-centered">
             <div class="column is-10 has-text-centered">
-              <img src="image/teaser.png" alt="Teaser image" style="border-radius:8px;">
+              <video controls playsinline preload="metadata" style="width:100%;border-radius:8px;" poster="image/teaser.png">
+                <source src="vedio/demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>
@@ -107,7 +112,6 @@
             <h2 class="title is-3">Abstract</h2>
             <div class="content has-text-justified">
               <p>
-                <!-- Paste your abstract here -->
                 Humanoid robots have demonstrated strong capability in interacting with static scenes across locomotion and manipulation, and even in unified loco-manipulation. Yet the real world is dynamic, and quasi-static interactions are insufficient. We present a reinforcement-learning–based training pipeline that produces a unified whole-body controller for humanoid badminton, enabling coordinated lower-body footwork and upper-body striking without any motion priors or expert demonstrations. Training follows a three-stage curriculum—first footwork acquisition, then precision-guided racket swing generation,  and finally task-focused refinement—yielding motions in which both legs and arms serve the hitting objective. For deployment, we incorporate an Extended Kalman Filter (EKF) to estimate and predict shuttlecock trajectories for striking target. We also introduce a prediction-free variant that dispenses with EKF and explicit prediction, making the policy more end-to-end. We validate the framework through five experiments in simulation and the real world. In simulation, two robots sustain a rally of 21 consecutive hits. The prediction-free variant achieves successful hits with only limited degradation relative to the target-known policy. In real-world tests, both the prediction and the controller module exhibit high accuracy, and on-court hitting achieves an outgoing shuttle speed up to 10 m/s with a mean return landing distance of 3.5 m. The evidence demonstrates that our humanoid robot can deliver high-dynamic, high-precision performance in badminton and can be extended toward more demanding athletic domains.
               </p>
             </div>
@@ -116,7 +120,7 @@
       </div>
     </section>
 
-    <!-- Network Architecture Image -->
+    <!-- Method / Network Architecture -->
     <section class="hero is-small">
       <div class="hero-body">
         <div class="container is-max-desktop">
@@ -130,17 +134,20 @@
       </div>
     </section>
 
-    <!-- Video -->
+    <!-- 原“Video”区改为两个小视频 -->
     <section class="hero is-small is-light">
       <div class="hero-body">
         <div class="container is-max-desktop">
-          <h2 class="title is-3 has-text-centered">Video</h2>
+          <h2 class="title is-3 has-text-centered">More Videos</h2>
           <div class="columns is-centered">
-            <div class="column is-10 has-text-centered">
-              <!-- NOTE: per your folder naming, use vedio/ -->
+            <div class="column is-5 has-text-centered">
               <video controls playsinline preload="metadata" style="width:100%;border-radius:8px;" poster="image/teaser.png">
-                <source src="vedio/demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+                <source src="vedio/clip1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column is-5 has-text-centered">
+              <video controls playsinline preload="metadata" style="width:100%;border-radius:8px;" poster="image/teaser.png">
+                <source src="vedio/clip2.mp4" type="video/mp4">
               </video>
             </div>
           </div>
