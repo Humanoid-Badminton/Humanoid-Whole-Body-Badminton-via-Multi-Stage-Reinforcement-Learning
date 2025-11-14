@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Primary Meta -->
-  <title>Project Title – Author Names</title>
+  <title>Humanoid Badminton</title>
   <meta name="description" content="Project page for our humanoid badminton work.">
   <meta name="keywords" content="robotics, humanoid, reinforcement learning">
-  <meta name="author" content="Author One, Author Two">
+  <meta name="author" content="Chenhao Liu">
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Project Title">
+  <meta property="og:title" content="Humanoid Whole-Body Badminton via Multi-Stage Reinforcement Learning">
   <meta property="og:description" content="Project page for our humanoid badminton work.">
   <meta property="og:image" content="image/teaser.png">
 
@@ -47,16 +47,19 @@
           <div class="columns is-centered">
             <div class="column has-text-centered">
 
-              <h1 class="title is-1 publication-title">Project Title</h1>
+              <h1 class="title is-1 publication-title">Humanoid Whole-Body Badminton via Multi-Stage Reinforcement Learning</h1>
 
               <div class="is-size-5 publication-authors">
-                <span class="author-block">Author One</span>,
-                <span class="author-block">Author Two</span>,
-                <span class="author-block">Author Three</span>
+                <span class="author-block">Chenhao Liu</span>,
+                <span class="author-block">Leyun Jiang</span>,
+                <span class="author-block">Yibo Wang</span>,
+                <span class="author-block">Kairan Yao</span>,
+                <span class="author-block">Jinchen Fu</span>,
+                <span class="author-block">Xiaoyu Ren</span>
               </div>
 
               <div class="is-size-5 publication-authors">
-                <span class="author-block">Institution / Lab Name</span>
+                <span class="author-block">Beijing Phybot Technology Co., Ltd</span>
               </div>
 
               <div class="publication-links" style="margin-top:0.75rem;">
@@ -86,7 +89,7 @@
     <section class="hero is-small">
       <div class="hero-body">
         <div class="container is-max-desktop">
-          <h2 class="title is-3 has-text-centered">Teaser</h2>
+          <!-- <h2 class="title is-3 has-text-centered">Teaser</h2> -->
           <div class="columns is-centered">
             <div class="column is-10 has-text-centered">
               <img src="image/teaser.png" alt="Teaser image" style="border-radius:8px;">
@@ -105,7 +108,7 @@
             <div class="content has-text-justified">
               <p>
                 <!-- Paste your abstract here -->
-                We present a staged RL training pipeline that produces a unified whole-body controller for humanoid badminton...
+                Humanoid robots have demonstrated strong capability in interacting with static scenes across locomotion and manipulation, and even in unified loco-manipulation. Yet the real world is dynamic, and quasi-static interactions are insufficient. We present a reinforcement-learning–based training pipeline that produces a unified whole-body controller for humanoid badminton, enabling coordinated lower-body footwork and upper-body striking without any motion priors or expert demonstrations. Training follows a three-stage curriculum—first footwork acquisition, then precision-guided racket swing generation,  and finally task-focused refinement—yielding motions in which both legs and arms serve the hitting objective. For deployment, we incorporate an Extended Kalman Filter (EKF) to estimate and predict shuttlecock trajectories for striking target. We also introduce a prediction-free variant that dispenses with EKF and explicit prediction, making the policy more end-to-end. We validate the framework through five experiments in simulation and the real world. In simulation, two robots sustain a rally of 21 consecutive hits. The prediction-free variant achieves successful hits with only limited degradation relative to the target-known policy. In real-world tests, both the prediction and the controller module exhibit high accuracy, and on-court hitting achieves an outgoing shuttle speed up to 10 m/s with a mean return landing distance of 3.5 m. The evidence demonstrates that our humanoid robot can deliver high-dynamic, high-precision performance in badminton and can be extended toward more demanding athletic domains.
               </p>
             </div>
           </div>
@@ -117,7 +120,7 @@
     <section class="hero is-small">
       <div class="hero-body">
         <div class="container is-max-desktop">
-          <h2 class="title is-3 has-text-centered">Network Architecture</h2>
+          <h2 class="title is-3 has-text-centered">Method</h2>
           <div class="columns is-centered">
             <div class="column is-10 has-text-centered">
               <img src="image/network.png" alt="Network architecture diagram" style="border-radius:8px;">
