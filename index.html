@@ -2,94 +2,152 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Project Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Minimal inline styles (no external deps) -->
-  <style>
-    :root { --acc:#e54c5e; --fg:#111; --muted:#666; --bg:#fff; }
-    *{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
-    .wrap{max-width:1000px;margin:0 auto;padding:24px}
-    header{padding:32px 0 20px;border-bottom:1px solid #eee}
-    h1{margin:0 0 10px;font-size:28px;line-height:1.2}
-    .authors{margin:6px 0;color:var(--fg);font-weight:600}
-    .affil{margin:2px 0 14px;color:var(--muted)}
-    .btns{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid var(--acc);color:var(--bg);background:var(--acc);text-decoration:none;border-radius:10px;font-weight:600}
-    .btn.alt{background:#fff;color:var(--acc)}
-    section{padding:22px 0;border-bottom:1px solid #eee}
-    section:last-of-type{border-bottom:none}
-    h2{margin:0 0 12px;font-size:22px}
-    p{margin:10px 0}
-    .figure{margin:8px 0}
-    .figure img, .figure video{width:100%;height:auto;border-radius:10px;border:1px solid #eee}
-    .caption{font-size:14px;color:var(--muted);margin-top:6px}
-    footer{padding:28px 0;color:#999;font-size:13px;text-align:center}
-    @media (max-width:560px){ h1{font-size:24px} .btn{width:100%;justify-content:center} }
-  </style>
+  <!-- Primary Meta -->
+  <title>Project Title – Author Names</title>
+  <meta name="description" content="Project page for our humanoid badminton work.">
+  <meta name="keywords" content="robotics, humanoid, reinforcement learning">
+  <meta name="author" content="Author One, Author Two">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Project Title">
+  <meta property="og:description" content="Project page for our humanoid badminton work.">
+  <meta property="og:image" content="image/teaser.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Project Title">
+  <meta name="twitter:description" content="Project page for our humanoid badminton work.">
+  <meta name="twitter:image" content="image/teaser.png">
+
+  <!-- Keep original template styles -->
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="wrap">
 
-    <!-- Header: title, authors, affiliation, buttons -->
-    <header>
-      <h1>Project Title (Humanoid Badminton)</h1>
-      <div class="authors">Author A, Author B, Author C</div>
-      <div class="affil">Your Institution / Lab</div>
+  <main id="main-content">
 
-      <div class="btns">
-        <!-- 修改 href 为你的 arXiv 链接 -->
-        <a class="btn" href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank" rel="noopener noreferrer">arXiv</a>
-        <!-- 修改 href 为你的 GitHub 仓库 -->
-        <a class="btn alt" href="https://github.com/your/repo" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </div>
-    </header>
+    <!-- Header block: title, authors, affiliation, buttons -->
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
 
-    <!-- 首图 -->
-    <section id="teaser">
-      <h2>Teaser</h2>
-      <div class="figure">
-        <!-- 将首图放在 image/ 下 -->
-        <img src="image/teaser.png" alt="Teaser image">
-        <div class="caption">Real-world humanoid badminton teaser.</div>
-      </div>
-    </section>
+              <h1 class="title is-1 publication-title">Project Title</h1>
 
-    <!-- 摘要 -->
-    <section id="abstract">
-      <h2>Abstract</h2>
-      <p>
-        <!-- 在此粘贴你的摘要 -->
-        We present a staged RL training pipeline that yields a unified whole-body controller for humanoid badminton...
-      </p>
-    </section>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">Author One</span>,
+                <span class="author-block">Author Two</span>,
+                <span class="author-block">Author Three</span>
+              </div>
 
-    <!-- 网络结构图 -->
-    <section id="network">
-      <h2>Network Architecture</h2>
-      <div class="figure">
-        <!-- 将网络结构图放在 image/ 下 -->
-        <img src="image/network.png" alt="Network architecture diagram">
-        <div class="caption">Overview of the policy and training setup.</div>
-      </div>
-    </section>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">Institution / Lab Name</span>
+              </div>
 
-    <!-- 视频 -->
-    <section id="video">
-      <h2>Video</h2>
-      <div class="figure">
-        <!-- 按你的要求，视频目录名为 vedio -->
-        <video controls playsinline preload="metadata" poster="image/teaser.png">
-          <source src="vedio/demo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <div class="caption">Demo video.</div>
+              <div class="publication-links" style="margin-top:0.75rem;">
+                <!-- arXiv button -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- GitHub button -->
+                <span class="link-block">
+                  <a href="https://github.com/USER/REPO" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer>
-      © 2025 Your Name(s). All rights reserved.
-    </footer>
-  </div>
+    <!-- Teaser Image -->
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3 has-text-centered">Teaser</h2>
+          <div class="columns is-centered">
+            <div class="column is-10 has-text-centered">
+              <img src="image/teaser.png" alt="Teaser image" style="border-radius:8px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Abstract -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                <!-- Paste your abstract here -->
+                We present a staged RL training pipeline that produces a unified whole-body controller for humanoid badminton...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Network Architecture Image -->
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3 has-text-centered">Network Architecture</h2>
+          <div class="columns is-centered">
+            <div class="column is-10 has-text-centered">
+              <img src="image/network.png" alt="Network architecture diagram" style="border-radius:8px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section class="hero is-small is-light">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3 has-text-centered">Video</h2>
+          <div class="columns is-centered">
+            <div class="column is-10 has-text-centered">
+              <!-- NOTE: per your folder naming, use vedio/ -->
+              <video controls playsinline preload="metadata" style="width:100%;border-radius:8px;" poster="image/teaser.png">
+                <source src="vedio/demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Icons JS (keep look & feel) -->
+  <script defer src="static/js/fontawesome.all.min.js"></script>
 </body>
 </html>
